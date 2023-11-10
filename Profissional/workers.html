@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Lista de Profissionais</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <a>
+                    <img class="icon" src="https://iili.io/JqgktJs.png">
+                </a>
+            </div>
+            <div class="header">
+                <img class="menu-button" src="https://iili.io/Jqgklf9.png">
+                <button class="menu-button" onclick="toggleNavbar()">☰</button>
+            </div>
+        </header>
+        <nav class="navbar" style="right: -20%;">
+            <a href="../Perfil de Usuário/user-perfil.html">Perfil</a>
+            <a href="../Profissional/workers.html">Consultas</a>
+            <a href="../meditaçao/meditacao.html">Meditações</a>
+            <a href="../Histórico Consultas/history.html">Histórico</a>
+            <a href="../cadastro/index.html">Sair</a>
+        </nav>
+        <div class="container">
+            <div class="select-container">
+                <label for="areas" class="select-label">Áreas:</label>
+                <select id="areas" class="select-box">
+                    <option value="area select">Selecionar</option>
+                    <option value="all">Todas</option>
+                    <option value="Psicologia">Psicologia</option>
+                    <option value="Terapia">Terapia</option>
+                    <option value="Psiquiatria">Psiquiatria</option>
+                </select>
+            </div>
+            <div class="select-container">
+                <label for="expertises" class="select-label">Especialidade:</label>
+                <select id="expertises" class="select-box">
+                    <option value="expertises select">Selecionar</option>
+                    <option value="all">Todas</option>
+                    <optgroup label="Psicologia">
+                        <option value="Psico Educacional">Psico Educacional</option>
+                        <option value="Psico Empresarial">Psico Empresarial</option>
+                        <option value="Psico Esportiva">Psico Esportiva</option>
+                        <option value="Psico do Trânsito">Psico do Trânsito</option>
+                        <option value="Psico Hospitalar">Psico Hospitalar</option>
+                        <option value="Psico Social">Psico Social</option>
+                        <option value="Psico Ambiental">Psico Ambiental</option>
+                        <option value="Neuropsicologia">Neuropsicologia</option>
+                        <option value="Psicomotricidadel">Psicomotricidade</option>
+                        <option value="Psico Clínica">Psico Clínica</option>
+                        <option value="Psico do Consummidor">Psico do Consummidor</option>
+                        <option value="Psico Jurídica">Psico Jurídica</option>
+                        <option value="Orientação Profissional">Orientação Profissional</option>
+                        <option value="Psico do Idoso">Psico do Idoso</option>
+                        <option value="Psico de RH">Psico de RH</option>
+                    </optgroup>
+                    <optgroup label="Terapia">
+                        <option value="Psicanálise">Psicanálise</option>
+                        <option value="Jungiana">Jungiana</option>
+                        <option value="Cognitivo-Comportamental">Cognitivo-Comportamental</option>
+                        <option value="Mindfullness">Mindfullness</option>
+                        <option value="Gestalt-terapia">Gestalt-terapia</option>
+                        <option value="Psicodrama">Psicodrama</option>
+                        <option value="EMDR">EMDR</option>
+                        <option value="Lacaniana">Lacaniana</option>
+                    </optgroup>
+                    <optgroup label="Psiquiatria">
+                        <option value="Psicoterapia">Psicoterapia</option>
+                        <option value="Psicogeriatria">Psicogeriatria</option>
+                        <option value="Medicina do Sono">Medicina do Sono</option>
+                        <option value="Psiquiatria Forense">Psiquiatria Forense</option>
+                        <option value="Psiquiatria da Infância e Adolescência">Psiquiatria da Infância e Adolescência</option>
+                        <option value="Psicopatologia e Semiologia dos Transtornos Mentais">Psicopatologia e Semiologia dos Transtornos Mentais</option>
+                        <option value="Saúde Mental e Atenção Psicossocial">Saúde Mental e Atenção Psicossocial</option>
+                        <option value="Terapêutica em Psiquiatria">Terapêutica em Psiquiatria</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="select-container">
+                <label for="rating" class="select-label">Avaliação:</label>
+                <select id="rating" class="select-box">
+                    <option value="rating select">Selecionar</option>
+                    <option value="all">Todas</option>
+                    <option value="up to 5,0">Até 5,0</option>
+                    <option value="from 4,0 to 4,5">De 4,0 até 4,5</option>
+                    <option value="below 4,0">Abaixo de 4,0</option>
+                </select>
+            </div>
+        </div>
+        <div class="section-3">
+            <img class="workers-icon" src="https://iili.io/Jqgk8Ja.png" alt="Ícone de estetoscópio">
+            <div>
+                <h4>
+                    <a href="../Marcar-Consulta/marcar-consulta.html">Ana Oliveira</a>
+                </h4>
+                <p>Psicóloga</p>
+                <p>Especialidade: Psicologia Clínica e Psicologia Organizacional</p>
+                <h5>Avaliações:</h5>
+                <div class="rating">
+                        <span class="star" onclick="rate(1)">★</span>
+                        <span class="star" onclick="rate(2)">★</span>
+                        <span class="star" onclick="rate(3)">★</span>
+                        <span class="star" onclick="rate(4)">★</span>
+                        <span class="star" onclick="rate(5)">★</span>
+                        (267)
+                </div>
+            </div>
+        </div>
+        <div class="section-3">
+            <img class="workers-icon" src="https://iili.io/JqgkS5J.png" alt="Ícone de meditação">
+            <div>
+                <h4>
+                    <a href="../Marcar-Consulta/marcar-consulta.html">Lúcia Santos</a>
+                </h4>
+                <p>Psiquiatra</p>
+                <p>Especialidade: Transtorno de Ansiedade, TEPT, Anorexia</p>
+                <h5>Avaliações:</h5>
+                <div class="rating">
+                    <span class="star" onclick="rate(1)">★</span>
+                    <span class="star" onclick="rate(2)">★</span>
+                    <span class="star" onclick="rate(3)">★</span>
+                    <span class="star" onclick="rate(4)">★</span>
+                    <span class="star" onclick="rate(5)">★</span>
+                    (2595)
+                </div>
+            </div>
+        </div>
+        <div class="section-3">
+            <img class="workers-icon" src="https://iili.io/JqgkUOv.png" alt="Ícone de comunidade">
+            <div>
+                <h4>
+                    <a href="../Marcar-Consulta/marcar-consulta.html">Pâmela Lopes</a>
+                </h4>
+                <p>Terapêuta</p>
+                <p>Especialidade: Terapias: Ocupacional, em Grupo e de Casais</p>
+                <h5>Avaliações:</h5>
+                <div class="rating">
+                    <span class="star" onclick="rate(1)">★</span>
+                    <span class="star" onclick="rate(2)">★</span>
+                    <span class="star" onclick="rate(3)">★</span>
+                    <span class="star" onclick="rate(4)">★</span>
+                    <span class="star" onclick="rate(5)">★</span>
+                    (198)
+                </div>
+            </div>
+        </div>
+        <script src="../JS/scritp.js"></script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Lista de Consultas</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/styles.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <a href="pro-homepage.html">
+                    <img class="icon" src="https://iili.io/JqgktJs.png">
+                </a>
+            </div>
+            <div class="header">
+                <img class="menu-button" src="https://iili.io/Jqgklf9.png">
+                <button class="menu-button" onclick="toggleNavbar()">☰</button>
+            </div>
+        </header>
+        <nav class="navbar" style="right: -20%;">
+            <a href="user-p.html">Perfil</a>
+            <a href="query-list.html">Consultas Marcadas</a>
+            <a href="release-queries.html">Disponibilizar Consulta</a>
+            <a href="history.html">Histórico de Pacientes</a>
+            <a href="../cadastro/index.html">Sair</a>
+        </nav>
+        <div class="query-list-alert">
+            <h4>CONSULTAS MARCADAS</h4>
+        </div>
+        <div class="section-4">
+            <img class="workers-icon" src="https://iili.io/Jqgk4xp.png" alt="Paciente 001">
+            <div class="query-list-area">
+                <h4>Paciente: Luyza Días</h4>
+                <h4>Data: 25/04/2024</h4>
+                <h4>Horário: 15:00</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat unde optio libero, labore quas est consectetur soluta perspiciatis tempore? Cumque ea laboriosam illo ab distinctio eligendi, maiores fugit beatae rerum?</p>
+                <div class="query-cancel-area">
+                    <a href="../Profissional/release-queries.html">
+                        <button name="query-cancel" type="menu" class="query-cancel">Adiar Consulta</button>
+                    </a>
+                    <a href="../telas/chamadavideo.html">
+                        <button name="video-call" type="menu" class="video-call">Vídeo-chamada</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section-4">
+            <img class="workers-icon" src="https://iili.io/JqgkPsI.png" alt="Paciente 002">
+            <div class="query-list-area">
+                <h4>Paciente: Marcela Alvorada</h4>
+                <h4>Data: 25/04/2024</h4>
+                <h4>Horário: 18:00</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat unde optio libero, labore quas est consectetur soluta perspiciatis tempore? Cumque ea laboriosam illo ab distinctio eligendi, maiores fugit beatae rerum?</p>
+                <div class="query-cancel-area">
+                    <a href="../Profissional/release-queries.html">
+                        <button name="query-cancel" type="menu" class="query-cancel">Adiar Consulta</button>
+                    </a>
+                    <a href="../telas/chamadavideo.html">
+                        <button name="video-call" type="menu" class="video-call">Vídeo-chamada</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="../JS/scritp.js"></script>
+    </body>
+</html>

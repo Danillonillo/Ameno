@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Disponizar Consulta</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <a href="pro-homepage.html">
+                <img class="icon" src="https://iili.io/JqgktJs.png">
+            </a>
+        </div>
+        <div class="header">
+            <img class="menu-button" src="https://iili.io/Jqgklf9.png">
+            <button class="menu-button" onclick="toggleNavbar()">☰</button>
+        </div>
+    </header>
+    <nav class="navbar" style="right: -20%;">
+        <a href="user-p.html">Perfil</a>
+        <a href="query-list.html">Consultas Marcadas</a>
+        <a href="release-queries.html">Disponibilizar Consulta</a>
+        <a href="history.html">Histórico de Pacientes</a>
+        <a href="../cadastro/index.html">Sair</a>
+    </nav>
+    <div class="query-list-alert">
+        <span class="release-queries-alert">DISPONIBILIZAR CONSULTAS</span>
+    </div>
+    <div class="section-2">
+        <div class="box-calendar0">
+            <div class="icon-bar">
+                <h4>SELECIONE OS DIAS DISPONÍVEIS</h4>
+            </div>
+            <div class="icon-bar">
+                <h4>PARA AS CONSULTAS</h4>
+            </div>
+            <div class="tabela-2">
+                <table class="tabela-2">
+                    <thead>
+                        <tr class="box-month">
+                            <th class="box-month" colspan="7">JULHO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="box-days">DOM</td>
+                            <td class="box-days">SEG</td>
+                            <td class="box-days">TER</td>
+                            <td class="box-days">QUA</td>
+                            <td class="box-days">QUI</td>
+                            <td class="box-days">SEX</td>
+                            <td class="box-days">SÁB</td>
+                        </tr>
+                        <tr>
+                            <td class="box-weekend">01</td>
+                            <td class="box-weekway">02</td>
+                            <td class="box-weekway">03</td>
+                            <td class="release-day">04</td>
+                            <td class="box-weekway">05</td>
+                            <td class="box-weekway">06</td>
+                            <td class="box-weekend">07</td>
+                        </tr>
+                        <tr>
+                            <td class="box-weekend">08</td>
+                            <td class="release-day">09</td>
+                            <td class="box-weekway">10</td>
+                            <td class="box-weekway">11</td>
+                            <td class="release-day">12</td>
+                            <td class="box-weekway">13</td>
+                            <td class="release-day">14</td>
+                        </tr>
+                        <tr>
+                            <td class="release-day">15</td>
+                            <td class="box-weekway">16</td>
+                            <td class="release-day">17</td>
+                            <td class="box-weekway">18</td>
+                            <td class="release-day">19</td>
+                            <td class="box-weekway">20</td>
+                            <td class="box-weekend">21</td>
+                        </tr>
+                        <tr>
+                            <td class="box-weekend">22</td>
+                            <td class="release-day">23</td>
+                            <td class="box-weekway">24</td>
+                            <td class="release-day">25</td>
+                            <td class="box-weekway">26</td>
+                            <td class="release-day">27</td>
+                            <td class="release-day">28</td>
+                        </tr>
+                        <tr>
+                            <td class="box-weekend">29</td>
+                            <td class="release-day">30</td>
+                            <td class="box-weekway">31</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="section-2">
+        <div class="box-calendar0">
+            <div class="icon-bar">
+                <h4>Selecione os horários para o dia 24/07</h4>
+            </div>
+            <div class="grid-buttom-area">
+                <button class="gridButton">08:00</button>
+                <button class="gridButton">09:00</button>
+                <button class="gridButton">10:00</button>
+                <button class="gridButton">11:00</button>
+                <button class="gridButton">12:00</button>
+                <button class="gridButton">14:00</button>
+                <button class="gridButton">15:00</button>
+                <button class="gridButton">16:00</button>
+                <button class="gridButton">17:00</button>
+            </div>
+        </div>
+        <div class="box-price-area">
+            <img class="icon" src="https://iili.io/Jqgk0le.png">
+            <div class="box-price-2">
+                <h5>Valor: R$ 150</h5>
+            </div>
+        </div>
+        <div class="box-next-area">
+            <button name="next" type="button" class="next-button">
+                <a class="link" href="pro-homepage.html">Continuar</a>
+            </button>
+        </div>
+    </div>
+
+    <script src="../JS/scritp.js"></script>
+</body>
+</html>

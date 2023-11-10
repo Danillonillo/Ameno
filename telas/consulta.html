@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultas</title>
+    <link rel="stylesheet" type="text/css" href="estyles.css">
+    <link rel="icon" href="img/Ameno-logo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="img/Ameno-logo.ico" alt="Logo"></div>
+        <div class="title">Agendamento de Consultas</div>
+        <div class="menu-dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">Menu &#9660;</button>
+            <div class="dropdown-content">
+                <a href="#">Login/Perfil</a>
+                <a href="#">Consultas</a>
+                <a href="#">Históricos</a>
+                <a href="#">Meditação</a>
+                <a href="#">Sair</a>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <img class="icon" src="img/face-removebg-preview.png" alt="Ícone de estetoscópio">
+        <div>
+            <h4>Psiquiatra</h4>
+            <p>Lucia Santos</p>
+            <p>Especialidade: Transtorno de ansiedade</p>
+            <div class="rating">
+                <span class="star" onclick="rate(1)">★</span>
+                <span class="star" onclick="rate(2)">★</span>
+                <span class="star" onclick="rate(3)">★</span>
+                <span class="star" onclick="rate(4)">★</span>
+                <span class="star" onclick="rate(5)">☆</span>
+            </div>
+            <div>
+                <p>
+                    Olá! Sou uma psiquiatra especializada no tratamento de transtornos de ansiedade. Com anos de
+                    experiencia na área. ofereço ambiente seguro e acolhedor para ajudar meus pacientes a superarem suas
+                    dificuldades e alcançarem uma vida mais equilibrada e saudável utilizo abordagens terapeuticas
+                    comprovadas para ajudar meus pacientes a gerenciar seus sintomas e desenvolver habilidades para
+                    lidar com o estresse e a ansiedade.
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <label for="data-hora">Data e Hora da Consulta</label>
+        <input type="datetime-local" id="data-hora" name="data-hora">
+    </div>
+    <div class="select">
+        <p>
+            Valor: 100.00
+        </p>
+    </div>
+    <!-- Botão de confirmação dos dados selecionados -->
+    <div class="botao">
+        <button id="confirmarDados" onclick="confirmarDados()">Continuar</button>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

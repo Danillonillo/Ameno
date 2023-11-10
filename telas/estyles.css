@@ -1,0 +1,290 @@
+* {
+    font-family: Nunito, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Definindo a cor de fundo para toda a página */
+    background-color: #F0F8FF;
+    /* Substitua pela cor desejada */
+    text-decoration: none;
+}
+
+/* Estilo do menu dropdown */
+.menu-dropdown {
+    position: relative;
+    display: inline-block;
+    float: none;
+    margin-top: 2px;
+    margin-right: 40px;
+}
+
+.dropbtn {
+    background-color: #d6dce0;
+    color: rgb(14, 13, 13);
+    padding: 2px 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: #4fa2c9;
+}
+
+/* Conteúdo do menu dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fafcfd;
+    min-width: 140px;
+    box-shadow: 0px 5px 10px 0px rgb(245, 246, 247);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: rgb(75, 122, 160);
+    padding: 6px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Estilo para organizar o layout */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.left-content {
+    width: 100%;
+}
+
+.content {
+    margin: 8px 0;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Estilo da navbar */
+header {
+    background-color: #6A90AC;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+/*navbar e navbar a mexem na navbar e seus links*/
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #6A90AC;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -20%;
+    transition: right 0.3s ease;
+    z-index: 0;
+}
+
+.navbar a {
+    color: #FFFFFF;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.section {
+    background-color: #FFFFFF;
+    margin: 80px 20px 20px 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+
+.header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-button {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.notification-button {
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    border: 1px solid #000;
+    background-image: url(../Images/bell-plus-w.png);
+}
+
+.icon-bar {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+
+/* Estilo para profissionais selecionáveis */
+.profissionais-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profissionais-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 500px;
+    box-shadow: 0px 4px 8px 0px rgb(242, 243, 243);
+    z-index: 1;
+}
+
+.profissionais-dropdown-content a {
+    color: rgb(250, 243, 243);
+    padding: 6px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.profissionais-dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.profissionais-dropdown:hover .profissionais-dropdown-content {
+    display: block;
+}
+
+.profissionais li {
+    cursor: pointer;
+    padding: 8px;
+    list-style: none;
+}
+
+.profissionais li.selected {
+    background-color: #f2f2f2;
+}
+
+.section {
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+}
+
+.select {
+    background-color: #FFFFFF;
+    border: 2px solid #c7c4c4;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 300px;
+    display: block;
+    width: 10%;
+    margin-top: 0px;
+}
+
+.botao {
+    background-color: #1df015;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 500px;
+    margin-top: 300px;
+    display: block;
+    width: 10%;
+    margin-top: 0px;
+    text-decoration: none;
+}
+
+.icon {
+    height: 90px;
+    width: 90px;
+    margin-right: 60px;
+}
+
+.rating {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.star {
+    color: gold;
+    transition: color 0.2s ease-in-out;
+}
+
+.star:hover {
+    color: orange;
+}
+
+.botao-A {
+    padding: 10px 8px;
+    width: 170px;
+    color: #fff;
+    background-color: #54f534;
+    border-radius: 19px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 13%;
+    text-decoration: none;
+}
+
+.confi {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.botao-A:hover {
+    background: #8b9e9b;
+    transition: background 1s;
+
+}
+
+.Texto {
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+}

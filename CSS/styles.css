@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap');
+/*
+justify-content: Alinha horizontalmente (X)
+align-items: Alinha verticalmente (Y)
+
+/*Homepage - Tela-Página Inicial*/
+body {
+    background-color: #E0FFFF;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+a:hover {
+    text-decoration: none;
+    color: #96d451;
+}
+/*header mexe no menu fixo do começo da página*/
+header {
+    background-color: #6A90AC;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+/*navbar e navbar a mexem na navbar e seus links*/
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: #6A90AC;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -20%;
+    transition: right 0.3s ease;
+    z-index: 0;
+}
+.navbar a {
+    color: #FFF;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.section {
+    background-color: #FFF;
+    margin: 80px 20px 20px 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    justify-self: center;
+}
+.header {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.menu-button {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.notification-button {
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    border: 1px solid #000;
+    background-image: url(../Images/bell-plus-w.png);
+}
+.icon-bar {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.icon {
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+
+/*Perfil de Usuário/Profissional*/
+
+.user-icon {
+    height: 95px;
+    width: 95px;
+    margin-right: 5%;
+}
+.backbaloon {
+    background-color: #FFF;
+    margin: 80px 20px 20px 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: block;
+}
+.perfil-username {
+    border: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.perfil-description {
+    border: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 1px solid;
+}
+.screen-alert {
+    padding: 10px;
+    border: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.screen-text {
+    background-color: #FFF;
+    border: 1px solid #000;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+}
+.post {
+    background-color: #FFF;
+    border: 1px solid #000;
+    margin: 20px 20px 20px 20px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.post-icon-area {
+    border: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.post-img {
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+}
+
+/* Lista de Profissionais*/
+/*Só os filtros*/
+.hidden {
+    display: none;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 80px;
+    margin-bottom: -50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.select-container {
+    width: 30%;
+}
+.select-label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.select-box {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/**/
+.section-3 {
+    background-color: #FFF;
+    margin: 80px 20px 20px 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-self: center;
+}
+.workers-icon {
+    height: 25%;
+    width: 25%;
+    margin-right: 5%;
+}
+.rating {
+    font-size: 24px;
+    cursor: pointer;
+}
+.star {
+    color: gold;
+    transition: color 0.2s ease-in-out;
+}
+.star:hover {
+    color: orange;
+}
+
+/*Comunidade*/
+
+.post-alert-box {
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 80px;
+    left: 35%;
+    right: 35%;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: #FFF;
+    display: flex;
+}
+.other-post-1 {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 180px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+.other-post-2 {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+.mini-other-post {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+.icon-nickname-box {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+.area-alert-button{
+    align-items: right;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.users-icon-post {
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: 5px;
+    cursor: pointer;
+}
+.alert-icon {
+    align-items: center;
+    justify-content: center;
+    margin-left: 150%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.buttons-box {
+    align-items: right;
+    justify-content: center;
+    border: 10px;
+    margin-left: 70%;
+}
+.write-post-user-area {
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    bottom: 1%;
+    left: 5%;
+    right: 5%;
+    display: flex;
+}
+.text-area {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #FFF;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+.text-content-2 {
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+/*Confirmar/Cancelar Consulta*/
+
+.medical-consult {
+    background-color: #FFF;
+    margin: 80px 160px auto 160px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+.worker-box {
+    background-color: #FFF;
+    margin: 30px 80px auto 80px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+.worker-box-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+h4 {
+    line-height: 0.2;
+}
+h2 {
+    line-height: 0.2;
+}
+.value-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.yes-no-c-button-box {
+    position: fixed;
+    bottom: 0;
+    left: 20%;
+    right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.confirm-button {
+    background-color: #7FB68E;
+    color: #FFF;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 20px;
+    margin: 20px;
+    width: 200px;
+    height: 75px;
+}
+.cancel-button {
+    background-color: #DD2D50;
+    color: #FFF;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 20px;
+    margin: 20px;
+    width: 200px;
+    height: 75px;
+}
+.video-call {
+    background-color: #E6B39A;
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 20px;
+    margin: 20px;
+    width: 200px;
+    height: 75px;
+}
+
+/*Histórico de Consultas*/
+
+.alert-mensage {
+	margin-top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #FFF;
+	border: 1px solid #000;
+	border-radius: 20px;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.history-big-box {
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5%;
+    background-color: #FFF;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.history-big-box-2 {
+    margin-top: 35px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #FFF;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+}
+
+.history-small-box {
+	display: flex;
+    flex-direction: column;
+    align-items: left;
+	justify-content: center;
+}
+
+.history-mini-mini-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.history-mini-mini-box-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.prescription-button {
+	display: flex;
+	align-items: right;
+	justify-content: center;
+	background-color: #0000CD;
+	color: #FFF;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 20px;
+    margin: 20px;
+    width: 100px;
+    height: 75px;
+}
+
+/*Marcar Consulta*/
+
+.section-2 {
+    background-color: #FFF;
+    margin: 80px 20px 20px 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-text {
+    border: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.icon-const {
+    height: 120px;
+    width: 120px;
+    border: 5px;
+}
+.box-calendar0 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.box-button {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+}
+.box-price {
+    border: 1px solid #000;
+    text-align: center;
+    justify-content: center;
+    margin: 3% 35%;
+    font-size: medium;
+    font-weight: bold;
+}
+.box-next-button {
+    padding: 2px 25%;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    background: #96d451;
+    color: #FFF;
+    border-radius: 50px;
+    height: 45px;
+    width: 45%;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tabela-container {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-bottom: 20px solid transparent;
+}
+.tabela {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 1% 5px;
+    margin-top: 20px;
+}
+.tabela td {
+    padding: 10px;
+    text-align: center;
+}
+.tabela th {
+    border: 1px solid #000;
+    background-color: #99ACFF;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.box-week {
+    border: 1px solid #000;
+    font: bold;
+    background: #99ACFF;
+    text-align: center;
+    justify-content: center;
+    cursor: not-allowed;
+}
+.box-schedules {
+    border: 1px solid #000;
+    background: #E7CBA4;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.box-no-schedules {
+    border: 1px solid #000;
+    background: #E3E8FF;
+    text-align: center;
+    justify-content: center;
+    cursor: not-allowed;
+}
+.check-box-calendar {
+    border: 1px solid #000;
+    background: #96d451;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer; 
+}
+
+/*Homepage Profissionais*/
+
+
+.section-4 {
+    background-color: #6A90AC;
+    margin: 80px 20px -40px 20px;
+    padding: 20px;
+    border: 1px solid #000;
+    font-weight: bold;
+    font-size: large;
+    color: #FFF;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    justify-self: center;
+}
+
+/*Lista de Consultas Profissional*/
+
+.query-list-alert {
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: -50px;
+    background-color: #FFF;
+    border: 2px solid #000;
+    border-radius: 20px;
+    display: flex;
+    font-weight: bold;
+    font-size: large;
+}
+.query-list-area {
+    align-items: center;
+    justify-content: left;
+}
+.query-cancel-area {
+    align-items: center;
+    justify-content: right;
+    display: flex;
+}
+.query-cancel {
+    text-align: center;
+    justify-content: center;
+    background-color: #DD2D50;
+    color: #FFF;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 180px;
+    height: 60px;
+}
+
+/*Disponibilizar Consultas*/
+
+.release-queries-alert {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid transparent;
+}
+.box-calendar1 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.tabela-2 {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 20px 20px;
+    margin-top: 20px;
+}
+.tabela-2 td {
+    padding: 10px;
+    text-align: center;
+}
+.tabela-2 th {
+    border: 3px dotted #6D7578;
+    background-color: #6A90AC;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+.box-month {
+    border: 3px dotted #6D7578;
+    font: bold;
+    color: #FFF;
+    text-align: center;
+    justify-content: center;
+}
+.box-days {
+    border: 3px dotted #6D7578;
+    background: #8B9E9B;
+    text-align: center;
+    justify-content: center;
+}
+.box-weekway {
+    border: 3px dotted #6D7578;
+    background: #E0FFFF;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.box-weekend {
+    border: 3px dotted #6D7578;
+    background: #99ACFF;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.release-day {
+    border: 3px dotted #6D7578;
+    background: #96d451;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.grid-buttom-area {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(3,40%);
+    grid-gap: 5px 10px;
+}
+.gridButton {
+    text-align: center;
+    justify-content: center;
+    background-color: #FFF;
+    border: 3px solid #6D7578;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.gridButton.clicado {
+    background-color: #96d451;
+}
+.box-price-area {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.box-price-2 {
+    text-align: center;
+    justify-self: center;
+    border: 1px solid #000;
+}
+.box-next-area {
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.next-button {
+    text-align: center;
+    justify-content: center;
+    background-color: #96d451;
+    color: #FFF;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 20px;
+    width: 130px;
+    height: 50px;
+}
+#meuBotao {
+    background-color: green; /* Cor inicial do botão */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#meuBotao.clicado {
+    background-color: red; /* Cor quando o botão é clicado */
+}
+.link {
+    text-decoration: none;
+    color: #FFF;
+}
+.link:hover {
+    color: #000;
+}

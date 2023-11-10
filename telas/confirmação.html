@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consultas</title>
+    <link rel="stylesheet" type="text/css" href="estyles.css">
+    <link rel="icon" href="img/Ameno-logo.ico">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="img/Ameno-logo.ico" alt="Logo"></div>
+        <div class="title">Agendamento de Consultas</div>
+        <div class="menu-dropdown">
+            <button class="dropbtn" onclick="toggleDropdown()">Menu &#9660;</button>
+            <div class="dropdown-content">
+                <a href="#">Login/Perfil</a>
+                <a href="#">Consultas</a>
+                <a href="#">Históricos</a>
+                <a href="#">Meditação</a>
+                <a href="#">Sair</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="left-content">
+            <div class="content">
+                <h2>Profissionais Disponíveis</h2>
+                <div class="profissionais-dropdown">
+                    <button class="dropbtn" onclick="toggleProfissionaisDropdown()">Selecione um Profissional</button>
+                    <div class="profissionais-dropdown-content">
+                        <ul id="profissionais" class="profissionais">
+                            <li class="selectable" onclick="selectProfissional(this)">Karla Lima PSIQUIATRA</li>
+                            <li class="selectable" onclick="selectProfissional(this)">Thiago Cavalcanti PSICOLOGO</li>
+                            <li class="selectable" onclick="selectProfissional(this)">Iris Farias TERAPEUTA OCUPACIONAL
+                            </li>
+                            <!-- Adicione mais profissionais conforme necessário -->
+                        </ul>
+                    </div>
+                </div>
+
+                <label for="data-hora">Data e Hora da Consulta</label>
+                <input type="datetime-local" id="data-hora" name="data-hora">
+            </div>
+        </div>
+
+        <div class="left-content">
+            <div class="content">
+                <h2>Opções de Pagamento</h2>
+                <label for="forma-pagamento">Forma de Pagamento</label>
+                <select id="forma-pagamento" name="forma-pagamento">
+                    <option value="pix">PIX</option>
+                    <option value="debit">Cartão de Débito</option>
+                    <option value="credit">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                    <option value="cash">Dinheiro</option>
+                </select>
+
+                <div id="opcoesPagamento" class="content opcoes-pagamento">
+                    <!-- Os detalhes das opções de pagamento serão preenchidos dinamicamente com JavaScript -->
+                </div>
+
+                <!-- Botão de confirmação dos dados selecionados -->
+                <button id="confirmarDados" onclick="confirmarDados()">Confirmar Dados</button>
+            </div>
+        </div>
+
+        <div class="left-content">
+            <div class="content opcoes-pagamento">
+                <h2>Confirmação de Consulta</h2>
+                <div id="detalhesConsulta">
+                    <!-- Os detalhes da consulta serão preenchidos dinamicamente com JavaScript -->
+                </div>
+
+                <div id="opcoesPagamentoConfirmacao">
+                    <!-- As opções de pagamento serão preenchidas dinamicamente com JavaScript -->
+                </div>
+
+                <button id="confirmarPagamento" onclick="confirmarPagamento()">Confirmar Pagamento</button>
+            </div>
+        </div>
+
+        <div class="left-content">
+            <div class="content opcoes-pagamento">
+                <h2>Lembrete para o Dia da Consulta</h2>
+                <p id="lembreteTexto">Lembrete: Sua consulta está marcada para o dia [data] às [hora].</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            const dropdownContent = document.querySelector(".dropdown-content");
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        }
+
+        function toggleProfissionaisDropdown() {
+            const dropdownContent = document.querySelector(".profissionais-dropdown-content");
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        }
+
+        let selectedProfissional = null;
+
+        function selectProfissional(profissional) {
+            selectedProfissional = profissional;
+            document.querySelectorAll(".profissionais-dropdown-content .selectable").forEach((item) => {
+                item.classList.remove("selected");
+            });
+            profissional.classList.add("selected");
+            document.querySelector(".profissionais-dropdown .dropbtn").textContent = profissional.textContent;
+            toggleProfissionaisDropdown();
+        }
+
+        function confirmarAgendamento() {
+            const dataHora = document.getElementById("data-hora").value;
+
+            if (!selectedProfissional) {
+                alert("Selecione um profissional antes de continuar.");
+                return;
+            }
+
+            const profissional = selectedProfissional.textContent;
+            document.getElementById("detalhesConsulta").innerHTML = `
+                <p><strong>Profissional:</strong> ${profissional}</p>
+                <p><strong>Data e Hora:</strong> ${dataHora}</p>
+            `;
+
+            document.querySelectorAll(".opcoes-pagamento").forEach((opcao) => {
+                opcao.style.display = "block";
+            });
+        }
+
+        function confirmarPagamento() {
+            // Adicione aqui a lógica para confirmar o pagamento
+        }
+
+        function confirmarDados() {
+            const formaPagamento = document.getElementById("forma-pagamento").value;
+            const detalhesPagamento = document.getElementById("opcoesPagamento").textContent;
+
+            // Você pode fazer algo com os dados aqui, como enviá-los para o servidor ou exibi-los em uma mensagem de confirmação
+            alert(`Forma de Pagamento: ${formaPagamento}\nDetalhes do Pagamento: ${detalhesPagamento}`);
+        }
+    </script>
+</body>
+
+</html>
