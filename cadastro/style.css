@@ -1,0 +1,369 @@
+.botao {
+    padding: 10px 8px;
+    width: 170px;
+    color: #6d7578;
+    background-color: #e6b39a;
+    border: 0px solid #555;
+    border-radius: 19px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 15%;
+}
+
+.botao:hover {
+    background: greenyellow;
+    transition: background 1s;
+}
+
+.botao2 {
+    padding: 10px 8px;
+    width: 170px;
+    color: #6d7578;
+    background-color: #e6b39a;
+    border: 0px solid #555;
+    border-radius: 19px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 15%;
+
+}
+
+.botao2:hover {
+    background: greenyellow;
+    transition: background 1s;
+}
+
+.botao3 {
+    padding: 10px 8px;
+    width: 170px;
+    color: #6d7578;
+    background-color: #e6b39a;
+    border: 0px solid #555;
+    border-radius: 19px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 15%;
+
+}
+
+.botao-com-icone {
+    padding: 10px 8px;
+    width: 170px;
+    color: #6d7578;
+    background-color: #e6b39a;
+    border: 0px solid #555;
+    border-radius: 19px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 15%;
+
+}
+
+.botao-A {
+    padding: 10px 8px;
+    width: 170px;
+    color: #fff;
+    background-color: #6A90AC;
+    border: 2px solid #555;
+    border-radius: 19px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 13%;
+
+}
+
+.botao-A:hover {
+    background: #8b9e9b;
+    transition: background 1s;
+
+}
+
+.botao-B {
+    padding: 10px 8px;
+    width: 170px;
+    color: #000000;
+    background-color: #fff;
+    border: 2px solid #555;
+    border-radius: 19px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 13%;
+
+}
+
+.botao-B:hover {
+    background: #8b9e9b;
+    transition: background 1s;
+
+}
+
+.botao-azul {
+    padding: 10px 8px;
+    width: 170px;
+    color: #ffffff86;
+    background-color: #8b9e9b;
+    border: 0px solid #555;
+    border-radius: 19px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 15%;
+
+}
+
+.botao-azul:hover {
+    background: #06e6c4;
+    transition: background 1s;
+
+}
+
+.continuar {
+    padding: 10px 8px;
+    width: 120px;
+    color: #fff;
+    background-color: rgb(125, 190, 26);
+    border: 0px solid #555;
+    border-radius: 19px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 10%;
+
+}
+
+.continuar:hover {
+
+    background: greenyellow;
+    transition: background 1s;
+}
+
+.botao3:hover {
+    background: greenyellow;
+    transition: background 1s;
+}
+
+.botao2:hover {
+    background: greenyellow;
+    transition: background 1s;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.Texto {
+    text-align: center;
+
+}
+
+.onda {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+
+}
+
+input {
+    background-color: #ffffff86;
+    border: none;
+
+}
+
+.formulario {
+    padding: 10px 8px;
+    width: 170px;
+    color: #ffffff86;
+    background-color: #8b9e9b;
+    border: none;
+    border-radius: 19px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 15%;
+}
+
+
+
+* {
+    background-color: #E0FFFF;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #e6b39a;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    background-image: url('../cadastro/camera-regular-24.png');
+    /* URL da imagem do ícone */
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    /* Posição do ícone à esquerda do texto */
+    background-size: 30px;
+    /* Tamanho do ícone */
+}
+
+.custom-file-upload input {
+    display: none;
+}
+
+.custom-file-upload:hover {
+    background-color: greenyellow;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #e6b39a;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    background-image: url('../cadastro/camerafundo.png');
+    /* URL da imagem do ícone */
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    /* Posição do ícone à esquerda do texto */
+    background-size: 30px;
+    /* Tamanho do ícone */
+    transition: background-color 0.3s;
+    /* Transição de cor de fundo */
+}
+
+.custom-file-upload:hover {
+    background-color: greenyellow;
+    /* Nova cor de fundo ao passar o mouse */
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #e6b39a;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    background-image: url('../cadastro/camerafundo.png');
+    /* URL da imagem do ícone */
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    /* Posição do ícone à esquerda do texto */
+    background-size: 30px;
+    /* Tamanho do ícone */
+    transition: background-color 0.3s;
+    /* Transição de cor de fundo */
+}
+
+.custom-file-upload input {
+    display: none;
+}
+
+.custom-file-upload:hover {
+    background-color: greenyellow;
+    /* Nova cor de fundo ao passar o mouse */
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #e6b39a;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    background-image: url('../cadastro/pasta.png');
+    /* URL da imagem do ícone */
+    background-repeat: no-repeat;
+    background-position: 3px center;
+    /* Posição do ícone à esquerda do texto */
+    background-size: 30px;
+    /* Tamanho do ícone */
+    transition: background-color 0.3s;
+    /* Transição de cor de fundo */
+}
+
+.custom-file-upload input {
+    display: none;
+}
+
+.custom-file-upload:hover {
+    background-color: greenyellow;
+    /* Nova cor de fundo ao passar o mouse */
+}
+
+#continuar-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #0074D9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}

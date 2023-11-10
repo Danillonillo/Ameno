@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pro 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <img src="Ameno__2_-removebg-preview.png" class="logo" width="225px">
+    <div class="botao"><input type="text" placeholder="Nome Completo"></div>
+    <br>
+    <div class="botao"><input type="date" placeholder="Data de Nascimento"></div>
+    <br>
+    <div class="botao"><input type="number" placeholder="CPF"></div>
+    <br>
+    <div class="botao"><input type="email" placeholder="E-mail"></div>
+    <br>
+    <div class="botao">RG Frente
+        <label for="file-upload" class="custom-file-upload">
+            <input type="file" id="file-upload" accept="image/*">
+            <i class="bx bx-cloud-upload"></i></label>
+
+    </div>
+    <br>
+    <div class="botao">RG Verso
+        <label for="file-upload-verso" class="custom-file-upload">
+            <input type="file" id="file-upload-verso" accept="image/*">
+            <i class="bx bx-cloud-upload"></i></label>
+    </div>
+    <br>
+    <div class="botao">Diploma
+        <label for="file-upload-diploma" class="custom-file-upload">
+            <input type="file" id="file-upload-diploma" accept="image/*, application/pdf">
+            <i class="bx bx-cloud-upload"></i></label>
+    </div>
+    <br>
+    <div class="botao">CAM/CRP</div>
+    <a href="cadastroP3.html">
+        <div class="continuar">Continuar</div>
+    </a>
+
+</body>
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-analytics.js";
+    import { getAuth } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-firestore.js";
+    import { ggetFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-functions.js";
+    import { getMessaging } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-messaging.js";
+    import { getStorage } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-storage.js";
+    import { getPerformance } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-performance.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
+    import { getRemoteConfig } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-remote-config.js";
+    import { initializeAppCheck, ReCaptchaV3Provider } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-appcheck.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyBU66VRtSiLOCWepdzs98T7BNToLSKYz7A",
+        authDomain: "ameno-e4361.firebaseapp.com",
+        projectId: "ameno-e4361",
+        storageBucket: "ameno-e4361.appspot.com",
+        messagingSenderId: "1002866412138",
+        appId: "1:1002866412138:web:1da6c85582a0f036ec9813",
+        measurementId: "G-GS5NCZX5C4"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+    const functions = getFunctions(app);
+    const messaging = getMessaging(app);
+    const storage = getStorage(app);
+    const perf = getPerformance(app);
+    const database = getDatabase(app);
+    const remoteConfig = getRemoteConfig(app);
+    const appCheck = initializeAppCheck(app, provider: new ReCaptchaV3Provider('abcdefghijklmnopqrstuvwxy-1234567890abcd'))
+</script>
+
+
+</html>
